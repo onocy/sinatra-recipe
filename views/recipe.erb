@@ -1,1 +1,15 @@
-<p><%= @id %></p>
+<a href = "/recipes">Go Back</a>
+<h1><a href = "<%= @recipe.url %>"><%= @recipe.name %></a></h1>
+<p><%= @recipe.description %></p>
+<ul class = "collection with-header">
+    <li class = "collection-header"><h4>Ingredients: </h4></li>
+    <% @recipe.ingredients.each do |ingredient| %>
+        <li class = "collection-item"> <%= ingredient %> </li>
+    <% end %>
+</ul>
+<h4>Instructions: </h4>
+<ol class = "collection with-header">
+    <% @recipe.method.each do |method| %>
+        <li class = "collection-item"> <%= method %> </li>
+    <% end %>
+</ol>

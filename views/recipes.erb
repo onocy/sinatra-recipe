@@ -1,0 +1,22 @@
+  <% @recipes.each_slice(3) do |three_recipes| %>
+    <div class="row">
+        <% three_recipes.each do |recipe| %>
+            <div class="col s12 m4">
+                 <div class="card blue-grey darken-1 small ">
+                    <div class="card-content white-text">
+                    <span class="card-title"><%= recipe[:name] %></span>
+                    <p><%= recipe[:description]%></p>
+                    <br>
+                    <div id = "statistics">
+                        <p>Ingredients: <%= recipe[:ingredient_count]%></p>
+                        <p>Number of Steps: <%= recipe[:method_count]%></p>
+                    </div>
+                </div>
+                <div class="card-action">
+                <a href="recipe/<%=recipe[:id]%>">Show Recipe</a>
+                </div>
+            </div>
+            </div>
+        <% end %>
+    </div>
+  <% end %>
