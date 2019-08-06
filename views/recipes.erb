@@ -2,7 +2,8 @@
     <div class="row">
         <% three_recipes.each do |recipe| %>
             <div class="col s12 m4">
-                 <div class="card blue-grey darken-1 small ">
+                 <div class="card teal lighten-1
+ small ">
                     <div class="card-content white-text">
                     <span class="card-title"><%= recipe[:name] %></span>
                     <p><%= recipe[:description]%></p>
@@ -13,7 +14,9 @@
                     </div>
                 </div>
                 <div class="card-action">
-                <a href="recipe/<%=recipe[:id]%>">Show Recipe</a>
+                <div class = "center">
+                <a href="recipe/<%=recipe[:id]%>" class="waves-effect waves-light btn-small red lighten-1">Show Recipe</a>
+                </div>
                 </div>
             </div>
             </div>
