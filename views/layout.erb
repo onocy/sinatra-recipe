@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href = "../public/stylesheets/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>Document</title>
+    <title>Christmas Recipes</title>
 </head>
 <body>
+    <div class = "navbar-fixed">
+        <nav class = "red lighten-1">
+            <div class="nav-wrapper">
+            <a href="/recipes" class="brand-logo center"> Recipes</a>
+            </div>
+        </nav>
+    </div>
     <%= yield %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <footer class = "page-footer red lighten-1">
+    
+         
+         <div class = "footer-copyright">
+            <div class = "container center">
+               © 2019 Phillip Michalowski & Will Gooley
+            </div>
+         </div>         
+       </footer>
 </body>
 </html>
